@@ -1,0 +1,58 @@
+*{box-sizing:border-box}:root{--blue:#1677ff;--dark:#07366f;--line:#e4ebf5;--pale:#f5f9ff;--muted:#718096}
+body{margin:0;font-family:Futura,'Futura PT','Century Gothic',Arial,sans-serif;color:#123c70;background:#fff}.nav{height:70px;background:var(--blue);color:#fff;display:flex;align-items:center;padding:0 34px;gap:7px;box-shadow:0 1px 5px #0002}.brand{font-size:25px;font-weight:800;margin-right:22px}.brand small{font-size:11px;opacity:.8}.navlink{height:70px;padding:0 18px;border:0;background:transparent;color:#fff;font-weight:700;font-size:15px;cursor:pointer;position:relative}.navlink:after{
+  content:"";
+  position:absolute;
+  height:3px;
+  bottom:7px;
+  left:18px;
+  right:18px;
+  background:#fff;
+  border-radius:4px;
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform .18s ease;
+}
+.navlink:hover:after,
+.navlink.active:after{
+  transform:scaleX(1);
+}.nav-spacer{flex:1}.admin-open{background:#ffffff18;color:#fff;border:1px solid #ffffff55;border-radius:7px;padding:9px 13px;cursor:pointer}.submit{border:0;background:#fff;color:var(--blue);font-weight:700;padding:12px 18px;border-radius:7px;cursor:pointer}
+.page{display:grid;grid-template-columns:315px minmax(500px,1fr) 310px;min-height:calc(100vh - 70px)}.levels{border-right:1px solid var(--line);padding:18px 12px;overflow:auto}.search{border:1px solid var(--line);padding:11px;border-radius:7px;margin:0 7px 12px;color:#8ca0b7}.level{width:100%;display:grid;grid-template-columns:40px 1fr;gap:8px;padding:11px;border:0;border-radius:7px;cursor:pointer;background:#fff;color:#123c70;text-align:left;font:inherit}.level:hover{background:#f5f9ff}.level.active{background:#e9f3ff;color:#075fcf;font-weight:700}.num{text-align:right;color:#91a2b8}
+.main{padding:34px 45px;max-width:920px;width:100%;margin:auto}.title{position:relative;background:var(--blue);color:#fff;margin:-34px -45px 25px;padding:27px 45px}.eyebrow{font-size:11px;letter-spacing:1.4px;opacity:.85;font-weight:700}.title h1{font-size:42px;margin:8px 70px 0 0}.rank{position:absolute;right:40px;bottom:25px;background:#fff;color:var(--blue);padding:8px 12px;border-radius:7px;font-weight:800}.people,.info{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.people{margin-bottom:25px}.people label,.info label{display:block;font-size:10px;color:#7d96b3;font-weight:800;letter-spacing:.7px;margin-bottom:5px}.video{aspect-ratio:16/9;background:#f5f9ff;border:1px solid var(--line);border-radius:9px;display:grid;place-items:center;overflow:hidden}.video a{color:#fff;background:var(--blue);text-decoration:none;padding:12px 18px;border-radius:7px;font-weight:700}.info{padding:22px 0;border-bottom:1px solid var(--line);text-align:center}.section-head{display:flex;justify-content:space-between;align-items:center;margin-top:26px}.table{border:1px solid var(--line);border-radius:8px;overflow:hidden}.tr{display:grid;grid-template-columns:50px 1fr 100px;padding:14px 16px;border-top:1px solid var(--line)}.tr:first-child{border-top:0}.th{background:var(--pale);font-size:10px;font-weight:800;color:#7d96b3}.right{border-left:1px solid var(--line);padding:30px 23px}.card{border:1px solid var(--line);border-radius:9px;padding:18px;margin-bottom:15px}.card h3{margin:0 0 14px;color:var(--dark)}.card p{font-size:13px;line-height:1.6;color:#61758d}.editor{display:flex;gap:10px;align-items:center}.avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#e8f2ff;color:var(--blue);font-weight:800}.editor small{display:block;color:#8a9bb0;margin-top:3px}.center{max-width:760px;margin:auto;padding:80px 20px;text-align:center}.center h1{font-size:42px;color:var(--dark)}.discord{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:14px 22px;border-radius:8px;font-weight:800;margin-top:12px}.big{font-size:16px;padding:13px 24px}.roulette-result{font-size:28px;font-weight:800;color:var(--blue);margin-top:25px}.modal{position:fixed;inset:0;background:#001a334d;display:grid;place-items:center;padding:20px;z-index:50}.hidden{display:none!important}.modal-box{background:#fff;border-radius:12px;padding:25px;max-width:500px;width:100%;position:relative;box-shadow:0 15px 50px #0003;max-height:90vh;overflow:auto}.close{position:absolute;right:15px;top:10px;border:0;background:transparent;font-size:28px;cursor:pointer}.modal-box input,.modal-box select{width:100%;padding:11px;margin:6px 0;border:1px solid var(--line);border-radius:7px}.primary,.danger{border:0;padding:11px 16px;border-radius:7px;color:#fff;cursor:pointer;font-weight:700}.primary{background:var(--blue)}.danger{background:#d83a3a;margin-top:8px}.muted{color:var(--muted);font-size:13px}.modal-box hr{border:0;border-top:1px solid var(--line);margin:20px 0}
+@media(max-width:1050px){.page{grid-template-columns:260px 1fr}.right{display:none}}@media(max-width:700px){.nav{padding:0 12px}.navlink{display:none}.page{grid-template-columns:1fr}.levels{max-height:260px;border-right:0;border-bottom:1px solid var(--line)}.main{padding:25px 18px}.title{margin:-25px -18px 25px;padding:25px 18px}.people,.info{grid-template-columns:1fr}.title h1{font-size:34px}.rank{right:18px}}
+
+.theme-toggle{border:1px solid #ffffff55;background:#ffffff18;color:#fff;border-radius:7px;width:38px;height:38px;cursor:pointer;font-size:18px}
+body.dark{--blue:#174ea6;--dark:#e8f1ff;--line:#26364d;--pale:#172235;--muted:#a9b8cc;background:#0c1420;color:#e7eef8}
+body.dark .levels,body.dark .right{background:#0c1420;border-color:var(--line)}
+body.dark .level{background:#0c1420;color:#e7eef8}
+body.dark .level:hover{background:#15243a}
+body.dark .level.active{background:#17345d;color:#8fc0ff}
+body.dark .search,body.dark .card,body.dark .table{border-color:var(--line);background:#101b2a}
+body.dark .video{background:#101b2a;border-color:var(--line)}
+body.dark .tr{border-color:var(--line)}
+body.dark .th{background:#172235;color:#9eb3cf}
+body.dark .modal-box{background:#101b2a;color:#e7eef8}
+body.dark .modal-box input,body.dark .modal-box select{background:#0c1420;color:#e7eef8;border-color:var(--line)}
+
+/* Submission Rules intentionally keep the non-Futura/system font. */
+.card:has(h3:first-child) p,
+.submission-rules,
+.submission-rules *{
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* Futura applies to all UI controls too. */
+button,input,select,textarea{
+  font-family:Futura,'Futura PT','Century Gothic',Arial,sans-serif;
+}
+.navlink,.admin-open,.submit,.theme-toggle,.primary,.danger,.level{
+  font-family:Futura,'Futura PT','Century Gothic',Arial,sans-serif;
+}
+
+.submission-rules,
+.submission-rules h3,
+.submission-rules p,
+.submission-rules *{
+  font-family:Arial,Helvetica,sans-serif !important;
+}
+
+.nav{border-bottom:0}.navlink{border-bottom:0}.navlink:focus{outline:none}
